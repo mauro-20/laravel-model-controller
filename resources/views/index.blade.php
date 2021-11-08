@@ -1,10 +1,10 @@
 @extends('layout.base')
 
 @section('pageContent')
-  <section>
+  <section class="movie-container">
     <ul>
       @foreach ($movies as $movie)
-      <li>
+      <li class="movie">
         <h2>{{$movie['title']}}</h2>
         <i>Original title: {{$movie['original_title']}}</i>
         <p>Nationality: {{$movie['nationality']}}</p>
